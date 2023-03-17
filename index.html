@@ -7,6 +7,12 @@
     <title>포트폴리오</title>
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/portfolio.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div>
@@ -15,19 +21,109 @@
         <div id="smallCircle" class="whiteBackground"></div>
         <div class="fontsize15rem whiteFont bold subject">Hi,</div>
         <div class="fontsize10rem whiteFont bold subject line80">
-          IM SUNG <br />
+          I'M SUNG <br />
           JUN
         </div>
         <div id="bigCircle" class="whiteBackground" data-id="seongyong"></div>
+        <div class="aboutMe" onclick="scrollDown()">
+          <p class="fontsize1rem">ABOUT ME</p>
+          <img src="down-arrow.png" class="downArrow" />
+        </div>
       </section>
       <section>
-        <div class="whiteFont fontsize5rem centerTextBox10 bold">
+        <div class="whiteFont fontsize5rem centerportfolio bold">
           SUNGJUN'S PORTFOLIO
         </div>
-        <div class="fontsize2rem bold centerTextBox10 whiteBackground">
-          ABOUT ME
+        <!-- aboutMe -->
+        <div
+          id="aboutme"
+          class="fontsize2rem bold centerTextBox10 whiteBackground"
+        >
+          <div class="profileContent">
+            <p class="fontsize3rem">Profile</p>
+            <p style="font-weight: 100; margin: 25px 0">
+              저는 <span style="font-weight: bold">프론트엔드 개발자</span>를
+              꿈꾸고 있습니다!
+            </p>
+            <div
+              class=""
+              style="
+                display: flex;
+                border: 1px solid black;
+                width: 50%;
+                margin: 0 auto;
+                justify-content: space-between;
+              "
+            >
+              <!-- 내 사진 -->
+              <div style="width: 350px; height: 450px">
+                <img
+                  src="profileImg.jpg"
+                  style="width: inherit; height: inherit"
+                />
+              </div>
+              <!-- 프로필 설명 -->
+              <div style="margin-left: 5%">
+                <!-- 기본 정보 -->
+                <div
+                  class="fontsize2rem"
+                  style="
+                    display: flex;
+                    justify-content: flex-start;
+                    margin: 0 10px 10px 10px;
+                    text-align: left;
+                  "
+                >
+                  <div>
+                    <p>Name</p>
+                    <p>Birth</p>
+                    <p>Address</p>
+                    <p>E-Mail</p>
+                    <p>Mobile</p>
+                  </div>
+                  <div style="margin-left: 5%; color: navy">
+                    <p>문성준</p>
+                    <p>1997.11.08</p>
+                    <p>전주시 덕진구 반월동</p>
+                    <p>tjdwnsrhksdn@naver.com</p>
+                    <p>010-2086-7368</p>
+                  </div>
+                </div>
+                <!-- 개발자가 되고싶은 설명 -->
+                <div style="text-align: left; margin: 20px 0; font-size: 20px">
+                  <p>사용자를 위해 화면의 UI와 UX륻 다루는 것에 흥미를 느껴</p>
+                  <p>프론트엔드 개발자가 되기로 마음을 먹었습니다.</p>
+                  <p>
+                    기술을 자유롭게 다룰 수 있습니다. 또한 협업을 중요시하며,
+                  </p>
+                  <p>다양한 분야의 사람들과 원활하게 커뮤니케이션 할 수 있는</p>
+                  <p>능력을 갖추고 있습니다. 저는 문제 해결과 사용자 경험에</p>
+                  <p>
+                    중점을 두며, 사용자의 니즈와 요구사항을 이해하고 이를
+                    기반으로 최적의 솔루션을 제공하는 것을 목표로 하고 있습니다.
+                  </p>
+                  <p>
+                    저의 열정과 끈기를 바탕으로 프론트엔드 개발 분야에서 더욱
+                    성장하고, 높은 수준의 결과물을 만들어내기 위해 노력하고
+                    있습니다.
+                  </p>
+                  기획서와 디자인을 꼼꼼히 확인하여 마크업을 어떻게 효율적으로
+                  구조화 할 지 숙고하고, 단지 화면에 잘 보여지는 것 뿐만 아니라
+                  얼마나 시맨틱하고, 어떻게 하면 운영과 유지보수, 개발에
+                  효율적일지 끊임없이 생각하며 코딩합니다. 기획서와 디자인이
+                  설계도면이라면 마크업은 건물의 기초공사와 같다고 생각합니다.
+                  기초공사가 잘 된 건물이 튼튼하듯이 잘 만들어진 웹사이트의
+                  필수조건은 탄탄한 마크업입니다. 여러 프로젝트에서 디자인과
+                  개발에 비해 마크업의 중요도가 등한시 되는 느낌을 받곤 합니다.
+                  웹사이트나 앱을 구축함에 있어 마크업의 중요성을 어필 할 수
+                  있는 퍼블리셔가 되고자 합니다.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div>
+        <!-- 기술 -->
+        <div class="skill-part">
           <p class="fontsize2rem whiteFont bold subject">SKILLS</p>
           <div class="flexAlignStart">
             <div class="whiteboxWidth whiteBox17rem"></div>
@@ -48,32 +144,24 @@
         <div class="footer whiteBackground"></div>
       </section>
     </div>
+    <script src="portfolio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-      window.onload = function () {
-        console.log(
-          document.getElementById("bigCircle").getAttribute("data-id")
-        );
+      var mHtml = $("html");
+      var page = 1;
 
-        console.log(document.getElementById("bigCircle").getAttribute("class"));
-
-        document.documentElement.setAttribute("color-theme", "pink");
-        //최상위 root에 이 속성을 셋팅해준겁니다
-      };
-
-      let darkMode = document.getElementById("darkMode");
-
-      darkMode.addEventListener("click", (event) => {
-        //e ===> 이벤트가 일어난 객체
-        //e.target ==> 이벤트가 일어난 객체를 선택
-        //e.target.innerText => 일어난 개체를 선택해서 innerText 속성을 선택
-
-        if (event.target.innerText === "RED") {
-          document.documentElement.setAttribute("color-theme", "dark");
-          event.target.innerText = "BLUE";
-        } else {
-          document.documentElement.setAttribute("color-theme", "pink");
-          event.target.innerText = "RED";
+      mHtml.animate({ scrollTop: 0 }, 10);
+      $(window).on("wheel", function (e) {
+        if (mHtml.is(":animated")) return;
+        if (e.originalEvent.deltaY > 0) {
+          if (page == 4) return;
+          page++;
+        } else if (e.originalEvent.deltaY < 0) {
+          if (page == 1) return;
+          page--;
         }
+        var posTop = (page - 1) * $(window).height();
+        mHtml.animate({ scrollTop: posTop });
       });
     </script>
   </body>

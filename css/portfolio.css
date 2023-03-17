@@ -6,7 +6,7 @@
 
 :root[color-theme="dark"] {
   --background: #990000;
-  --fontColor: #fff;
+  --fontColor: #222;
 }
 
 * {
@@ -17,6 +17,7 @@
 
 body {
   overflow-x: hidden;
+  font-family: "Sunflower", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -93,6 +94,7 @@ section {
 
 #aboutme {
   color: var(--fontColor);
+  height: 85%;
 }
 
 .contact {
@@ -101,4 +103,32 @@ section {
 
 .footer {
   height: 30%;
+}
+
+/* aboutME */
+.aboutMe {
+  position: absolute;
+  bottom: 5%;
+  left: 48%;
+  color: aquamarine;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.aboutMe:hover {
+  margin-bottom: -10px;
+  transition: 0.5s;
+}
+
+.downArrow {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 35%;
+  margin-top: 10px;
+}
+
+/* 기술파트 */
+.skill-part {
+  height: 70%;
 }
