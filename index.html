@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>포트폴리오</title>
+    <title>문성준 포트폴리오</title>
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/portfolio.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +28,7 @@
         <div id="bigCircle" class="whiteBackground" data-id="seongyong"></div>
         <div class="aboutMe" onclick="scrollDown()">
           <p class="fontsize1rem">ABOUT ME</p>
-          <img src="down-arrow.png" class="downArrow" />
+          <img src="img/down-arrow.png" class="downArrow" />
         </div>
       </section>
       <section>
@@ -40,7 +41,7 @@
           class="fontsize2rem bold centerTextBox10 whiteBackground"
         >
           <div class="profileContent">
-            <p class="fontsize3rem">Profile</p>
+            <p class="fontsize3rem">📃 Profile</p>
             <p style="font-weight: 100; margin: 25px 0">
               저는 <span style="font-weight: bold">프론트엔드 개발자</span>를
               꿈꾸고 있습니다!
@@ -49,28 +50,27 @@
               class=""
               style="
                 display: flex;
-                border: 1px solid black;
-                width: 50%;
+                width: 60%;
                 margin: 0 auto;
-                justify-content: space-between;
+                justify-content: flex-start;
               "
             >
               <!-- 내 사진 -->
-              <div style="width: 350px; height: 450px">
+              <div style="width: 300px; height: 400px; border-radius: 10px">
                 <img
-                  src="profileImg.jpg"
-                  style="width: inherit; height: inherit"
+                  src="img/profileImg.jpg"
+                  style="width: inherit; height: inherit; border-radius: 10px"
                 />
               </div>
               <!-- 프로필 설명 -->
               <div style="margin-left: 5%">
                 <!-- 기본 정보 -->
                 <div
-                  class="fontsize2rem"
+                  class="fontsize1-5rem"
                   style="
                     display: flex;
                     justify-content: flex-start;
-                    margin: 0 10px 10px 10px;
+                    margin: 0 0 10px 10px;
                     text-align: left;
                   "
                 >
@@ -81,7 +81,7 @@
                     <p>E-Mail</p>
                     <p>Mobile</p>
                   </div>
-                  <div style="margin-left: 5%; color: navy">
+                  <div style="margin-left: 5%; color: darkslateblue">
                     <p>문성준</p>
                     <p>1997.11.08</p>
                     <p>전주시 덕진구 반월동</p>
@@ -90,52 +90,146 @@
                   </div>
                 </div>
                 <!-- 개발자가 되고싶은 설명 -->
-                <div style="text-align: left; margin: 20px 0; font-size: 20px">
+                <div class="forDev">
                   <p>사용자를 위해 화면의 UI와 UX륻 다루는 것에 흥미를 느껴</p>
-                  <p>프론트엔드 개발자가 되기로 마음을 먹었습니다.</p>
+                  <p>프론트엔드 개발자가 될 수 있게 준비하고 있습니다.</p>
+                  <br />
                   <p>
-                    기술을 자유롭게 다룰 수 있습니다. 또한 협업을 중요시하며,
+                    협업을 중요시 하여 다양한 사람들과 원활하게 커뮤니케이션을
+                    할 수 있게
                   </p>
-                  <p>다양한 분야의 사람들과 원활하게 커뮤니케이션 할 수 있는</p>
-                  <p>능력을 갖추고 있습니다. 저는 문제 해결과 사용자 경험에</p>
+                  <p>사소한 것 놓치는 일 없이 꼼꼼히 확인하고 있습니다.</p>
+                  <br />
+                  <p>여러 페이지를 연습해보며 사용자에게 보이는 화면과</p>
                   <p>
-                    중점을 두며, 사용자의 니즈와 요구사항을 이해하고 이를
-                    기반으로 최적의 솔루션을 제공하는 것을 목표로 하고 있습니다.
+                    개발자에게 보이는 코드가 얼마나 중요한지 깨달았기 때문에,
                   </p>
                   <p>
-                    저의 열정과 끈기를 바탕으로 프론트엔드 개발 분야에서 더욱
-                    성장하고, 높은 수준의 결과물을 만들어내기 위해 노력하고
+                    가독성과 효율성이 좋은 코드를 작성하는 법을 연습하고
                     있습니다.
                   </p>
-                  기획서와 디자인을 꼼꼼히 확인하여 마크업을 어떻게 효율적으로
-                  구조화 할 지 숙고하고, 단지 화면에 잘 보여지는 것 뿐만 아니라
-                  얼마나 시맨틱하고, 어떻게 하면 운영과 유지보수, 개발에
-                  효율적일지 끊임없이 생각하며 코딩합니다. 기획서와 디자인이
-                  설계도면이라면 마크업은 건물의 기초공사와 같다고 생각합니다.
-                  기초공사가 잘 된 건물이 튼튼하듯이 잘 만들어진 웹사이트의
-                  필수조건은 탄탄한 마크업입니다. 여러 프로젝트에서 디자인과
-                  개발에 비해 마크업의 중요도가 등한시 되는 느낌을 받곤 합니다.
-                  웹사이트나 앱을 구축함에 있어 마크업의 중요성을 어필 할 수
-                  있는 퍼블리셔가 되고자 합니다.
+                  <br />
+                  <p>
+                    저의 열정과 끈기를 바탕으로 프론트엔드 개발 분야에서 더욱
+                    성장하고,
+                  </p>
+                  <p>높은 수준의 결과물을 만들어내기 위해 노력하겠습니다.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- 기술 -->
+      </section>
+      <!-- 기술 -->
+      <section>
         <div class="skill-part">
-          <p class="fontsize2rem whiteFont bold subject">SKILLS</p>
+          <p class="skill-title fontsize3rem whiteFont bold">⚙ SKILLS</p>
           <div class="flexAlignStart">
-            <div class="whiteboxWidth whiteBox17rem"></div>
-            <div>
-              <div class="whiteboxWidth whiteBox7rem"></div>
-              <div class="whiteboxWidth whiteBox13rem"></div>
+            <!-- 프론트엔드 -->
+            <div class="whiteboxWidth">
+              <div class="skill-inner-box">
+                <div class="skill-list">FrontEnd</div>
+                <!-- 이미지 -->
+                <div>
+                  <!-- 퍼블리싱 -->
+                  <img
+                    id="markup-img"
+                    class="skill-img"
+                    src="img/htmljscss.jpeg"
+                    alt="mark-up"
+                  />
+                  <div id="modal" class="modal-overlay">
+                    <div class="modal-window">
+                      <div class="title">
+                        <h2>퍼블리싱</h2>
+                      </div>
+                      <div class="close-area">X</div>
+                      <div class="content">
+                        <p id="model-content1">
+                          시맨틱 태그를 상황에 맞게 사용합니다.
+                        </p>
+                        <p id="model-content2">
+                          원하는 대로 css를 다루어 화면을 꾸밀 수 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 리액트 -->
+                  <img
+                    id="react-img"
+                    class="skill-img"
+                    src="img/react.png"
+                    alt="react"
+                  />
+                  <div id="modal" class="modal-overlay">
+                    <div class="modal-window">
+                      <div class="title">
+                        <h2>모달</h2>
+                      </div>
+                      <div class="close-area">X</div>
+                      <div class="content">
+                        <p>가나다라마바사 아자차카타파하</p>
+                      </div>
+                    </div>
+                  </div>
+                  <img class="skill-img" src="img/jquery.png" alt="jquery" />
+                </div>
+              </div>
             </div>
-            <div class="whiteboxWidth whiteBox13rem"></div>
-            <div class="whiteboxWidth whiteBox20rem"></div>
+            <!-- 데이터베이스 기술 깃허브  -->
+            <div>
+              <div class="whiteboxWidth" style="margin-bottom: 10px">
+                <div class="skill-inner-box">
+                  <div class="skill-list">DataBase</div>
+                  <!-- 이미지 -->
+                  <div>
+                    <img class="skill-img" src="img/oracle.png" alt="oracle" />
+                    <img class="skill-img" src="img/mysql.png" alt="mysql" />
+                  </div>
+                </div>
+              </div>
+              <div class="whiteboxWidth">
+                <div class="skill-inner-box">
+                  <div class="skill-list">Version Control</div>
+                  <!-- 이미지 -->
+                  <div>
+                    <img class="skill-img" src="img/github.jpg" alt="github" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 백엔드 기술 -->
+            <div class="whiteboxWidth">
+              <div class="skill-inner-box">
+                <div class="skill-list">BackEnd</div>
+                <!-- 이미지 -->
+                <div>
+                  <img class="skill-img" src="img/java.png" alt="java" />
+                  <img class="skill-img" src="img/jsp.jpg" alt="jsp" />
+                  <img class="skill-img" src="img/spring.png" alt="spring" />
+                </div>
+              </div>
+            </div>
+            <div class="whiteboxWidth">
+              <div class="skill-inner-box">
+                <div class="skill-list">Use Program</div>
+                <!-- 이미지 -->
+                <div>
+                  <img class="skill-img" src="img/eclipse.png" alt="eclipse" />
+                  <img class="skill-img" src="img/vscode.png" alt="vscode" />
+                  <img class="skill-img" src="img/dbeaver.png" alt="dbeaver" />
+                  <img
+                    class="skill-img"
+                    src="img/intellij.png"
+                    alt="intellij"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      <!-- 첫 번째 프로젝트 -->
       <section class="flexCenter">
         <div id="pojectBox" class="whiteBackground flexCenter">PROJECT 01</div>
       </section>
