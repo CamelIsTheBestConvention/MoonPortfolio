@@ -48,49 +48,15 @@ window.addEventListener(
   { passive: false }
 );
 
-// 모달창
-const modal = document.getElementById("modal");
+const projectBox = document.querySelector("#projectBox");
+let projectIndex = 0;
 
-function modalOn() {
-  modal.style.display = "flex";
-}
-function isModalOn() {
-  return modal.style.display === "flex";
-}
-function modalOff() {
-  modal.style.display = "none";
-}
-
-const closeBtn = modal.querySelector(".close-area");
-closeBtn.addEventListener("click", (e) => {
-  modalOff();
-});
-
-modal.addEventListener("click", (e) => {
-  const evTarget = e.target;
-  if (evTarget.classList.contains("modal-overlay")) {
-    modalOff();
+function slideProject() {
+  projectIndex++;
+  if (projectIndex > projectBox.children.length - 1) {
+    projectIndex = 0;
   }
-});
+  projectBox.style.transform = `translateX(-${projectIndex * 100}%)`;
+}
 
-window.addEventListener("keyup", (e) => {
-  if (isModalOn() && e.key === "Escape") {
-    modalOff();
-  }
-});
-
-var modalContent1 = document.getElementById("modal-content1");
-var modalContent2 = document.getElementById("modal-content2");
-// 퍼블리싱 모달
-const markupImg = document.getElementById("markup-img");
-markupImg.addEventListener("click", (e) => {
-  modalContent1.innerHTML = "이건 퍼블리싱";
-  modalOn();
-});
-
-// 리액트 모달
-const reactImg = document.getElementById("react-img");
-reactImg.addEventListener("click", (e) => {
-  modalOn();
-  modalContent1.innerHTML("이건 리액트");
-});
+setInterval(slideProject, 3000);
