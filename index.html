@@ -131,20 +131,76 @@
                 <!-- 이미지 -->
                 <div>
                   <!-- 퍼블리싱 -->
-                  <img
-                    id="markup-img"
-                    class="skill-img"
-                    src="img/htmljscss.jpeg"
-                    alt="mark-up"
-                  />
+                  <div class="skill-wrapper">
+                    <img
+                      id="markup-img"
+                      class="skill-img"
+                      src="img/htmljscss.jpeg"
+                      alt="mark-up"
+                    />
+                    <div class="overlay">
+                      <div class="skill-text">
+                        <p>
+                          - 각 부분에 맞게 시맨틱 태그를 사용하여 코드 작성이
+                          가능합니다.
+                        </p>
+                        <br />
+                        <p>
+                          - 미디어쿼리를 적용해 화면의 크기에 따라 웹 페이지의
+                          레이아웃을 조절하는 반응형 웹 디자인이 가능합니다.
+                        </p>
+                        <br />
+                        <p>
+                          - JavaScript를 사용하여 배너 슬라이드, 모달 창 등의
+                          클릭이벤트를 이용하여 UI 요소를 구현할 수 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                   <!-- 리액트 -->
-                  <img
-                    id="react-img"
-                    class="skill-img"
-                    src="img/react.png"
-                    alt="react"
-                  />
-                  <img class="skill-img" src="img/jquery.png" alt="jquery" />
+                  <div class="skill-wrapper">
+                    <img
+                      id="react-img"
+                      class="skill-img"
+                      src="img/react.png"
+                      alt="react"
+                    />
+                    <div class="overlay">
+                      <div class="skill-text">
+                        <p>
+                          - JSX 방식으로 컴포넌트를 파트에 맞게 적절히 나눌 수
+                          있습니다.
+                        </p>
+                        <br />
+                        <p>
+                          - React Router를 이용해 각 페이지별로 주소를 나눠
+                          사용할 수 있습니다.
+                        </p>
+                        <br />
+                        <p>
+                          - useState, useEffect, useRef같은 상태관리 Hook을 사용
+                          가능합니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 제이쿼리 -->
+                  <div class="skill-wrapper">
+                    <img class="skill-img" src="img/jquery.png" alt="jquery" />
+                    <div class="overlay">
+                      <div class="skill-text">
+                        <p>
+                          - 클릭이벤트, 마우스 오버 등의 Js의 이벤트 핸들링을
+                          Jquery로 구현 가능합니다.
+                        </p>
+                        <br />
+                        <p>
+                          AJAX를 사용하여 백엔드의 데이터를 비동기식으로 주고
+                          받을 수 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -155,8 +211,38 @@
                   <div class="skill-list">DataBase</div>
                   <!-- 이미지 -->
                   <div>
-                    <img class="skill-img" src="img/oracle.png" alt="oracle" />
-                    <img class="skill-img" src="img/mysql.png" alt="mysql" />
+                    <!-- 오라클 -->
+                    <div class="skill-wrapper">
+                      <img
+                        class="skill-img"
+                        src="img/oracle.png"
+                        alt="oracle"
+                      />
+                      <div class="overlay">
+                        <div class="skill-text">
+                          <p>- SQL문으로 DDL과 DML을 사용할 수 있습니다.</p>
+                          <br />
+                          <p>
+                            - 오라클을 사용하여 spring 프로젝트와 연동한 경험이
+                            있습니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- mysql -->
+                    <div class="skill-wrapper">
+                      <img class="skill-img" src="img/mysql.png" alt="mysql" />
+                      <div class="overlay">
+                        <div class="skill-text">
+                          <p>- SQL문으로 DDL과 DML을 사용할 수 있습니다.</p>
+                          <br />
+                          <p>
+                            - mySQL을 사용하여 JSP 프로젝트와 연동한 경험이
+                            있습니다.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -165,7 +251,23 @@
                   <div class="skill-list">Version Control</div>
                   <!-- 이미지 -->
                   <div>
-                    <img class="skill-img" src="img/github.jpg" alt="github" />
+                    <!-- 깃허브 -->
+                    <div class="skill-wrapper">
+                      <img
+                        class="skill-img"
+                        src="img/github.jpg"
+                        alt="github"
+                      />
+                      <div class="overlay">
+                        <div class="skill-text">
+                          <p>-</p>
+                          <br />
+                          <p>-</p>
+                          <br />
+                          <p>-</p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -204,9 +306,7 @@
       <!-- 첫 번째 프로젝트 -->
       <section class="flexCenter">
         <div id="pojectBox" class="whiteBackground flexCenter">
-          <div class="project-wrapper">
-            
-          </div>
+          <div class="project-wrapper"></div>
           <!-- <div><img src="img/intellij.png" /></div>
           <div><img src="img/intellij.png" /></div>
           <div><img src="img/intellij.png" /></div>

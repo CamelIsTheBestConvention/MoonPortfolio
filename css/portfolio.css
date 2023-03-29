@@ -163,6 +163,7 @@ section {
 
 .skill-img:hover {
   width: 17rem;
+  transition: 0.5s;
   /* margin-left: 10px; */
   /* cursor: pointer; */
 }
@@ -171,4 +172,39 @@ section {
   border: 1px solid black;
   border-radius: 10px;
   width: 25rem;
+}
+
+.skill-wrapper {
+  position: relative;
+  display: flex;
+}
+
+.overlay {
+  width: 0;
+  height: 9rem;
+  position: absolute;
+  left: 107%;
+  background-color: white;
+  border: 2px solid #d9d9d9;
+  border-radius: 0 10px 10px 0;
+  border-left: none;
+  transition: 0.5s;
+  opacity: 0;
+  z-index: 999;
+}
+
+.skill-text {
+  font-size: 0.8rem;
+  opacity: 0;
+  margin: 10px;
+}
+
+.skill-wrapper:hover .overlay {
+  opacity: 1;
+  width: 20rem;
+}
+
+.skill-wrapper:hover .skill-text {
+  opacity: 1;
+  transition: 1s;
 }
