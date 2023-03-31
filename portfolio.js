@@ -47,16 +47,3 @@ window.addEventListener(
   },
   { passive: false }
 );
-
-const projectBox = document.querySelector("#projectBox");
-let projectIndex = 0;
-
-function slideProject() {
-  projectIndex++;
-  if (projectIndex > projectBox.children.length - 1) {
-    projectIndex = 0;
-  }
-  projectBox.style.transform = `translateX(-${projectIndex * 100}%)`;
-}
-
-setInterval(slideProject, 3000);

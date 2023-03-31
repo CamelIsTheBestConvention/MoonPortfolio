@@ -260,11 +260,15 @@
                       />
                       <div class="overlay">
                         <div class="skill-text">
-                          <p>-</p>
+                          <p>
+                            - Git Bash를 사용하여 깃허브에 업로드할 수 있습니다.
+                          </p>
                           <br />
-                          <p>-</p>
+                          <p>
+                            - GitHub Organizations를 만들어 팀원들과
+                            팀프로젝트를 진행한 적이 있습니다.
+                          </p>
                           <br />
-                          <p>-</p>
                         </div>
                       </div>
                     </div>
@@ -278,9 +282,67 @@
                 <div class="skill-list">BackEnd</div>
                 <!-- 이미지 -->
                 <div>
-                  <img class="skill-img" src="img/java.png" alt="java" />
-                  <img class="skill-img" src="img/jsp.jpg" alt="jsp" />
-                  <img class="skill-img" src="img/spring.png" alt="spring" />
+                  <!-- 자바 -->
+                  <div class="skill-wrapper">
+                    <img class="skill-img" src="img/java.png" alt="java" />
+                    <div class="overlay">
+                      <div class="skill-text">
+                        <p>
+                          - Java언어에 대해 이해하고 코드를 작성할 수 있습니다.
+                        </p>
+                        <br />
+                        <p>
+                          - 메소드와 클래스에 대해 이해하고 사용할 수 있습니다.
+                        </p>
+                        <br />
+                        <p>
+                          - ArrayList를 이용해 데이터를 배열로 담아 사용할 수
+                          있습니다.
+                        </p>
+                        <br />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- jsp -->
+                  <div class="skill-wrapper">
+                    <img class="skill-img" src="img/jsp.jpg" alt="jsp" />
+                    <div class="overlay">
+                      <div class="skill-text">
+                        <p>
+                          - MVC 1 패턴을 이용하여 JSP 팀프로젝트를 한 적이
+                          있습니다.
+                        </p>
+                        <br />
+                        <p>- JSTL과 EL을 사용하여 코드를 작성했습니다.</p>
+                        <br />
+                        <p>
+                          - 서블릿을 사용하여 MySQL과 연동하여 사용했습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- spring -->
+                  <div class="skill-wrapper">
+                    <img class="skill-img" src="img/spring.png" alt="spring" />
+                    <div class="overlay">
+                      <div class="skill-text">
+                        <p>
+                          - MVC 2 패턴을 이용하여 Spring 팀프로젝트를 한 적이
+                          있습니다.
+                        </p>
+                        <br />
+                        <p>
+                          - 어노테이션을 적절히 사용하여 코드를 작성할 수
+                          있습니다.
+                        </p>
+                        <br />
+                        <p>
+                          - 타임리프를 사용하여 ORACLE에 데이터를 요청할 수 있게
+                          작성했습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -304,13 +366,23 @@
         </div>
       </section>
       <!-- 첫 번째 프로젝트 -->
-      <section class="flexCenter">
-        <div id="pojectBox" class="whiteBackground flexCenter">
+      <section class="flexCenter relative">
+        <div class="pojectBox whiteBackground flexCenter">
+          <div class="absolute">PROJECT 01</div>
+          <div class="project-wrapper">
+            <!-- 프로젝트 이름 -->
+            <div>중고나라 퍼블리싱</div>
+            <!-- 이미지와 설명 -->
+            <div style="display: flex;">
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="flexCenter relative">
+        <div class="pojectBox whiteBackground flexCenter">
+          <div class="absolute">PROJECT 02</div>
           <div class="project-wrapper"></div>
-          <!-- <div><img src="img/intellij.png" /></div>
-          <div><img src="img/intellij.png" /></div>
-          <div><img src="img/intellij.png" /></div>
-          <div><img src="img/intellij.png" /></div> -->
         </div>
       </section>
       <!-- contact me -->
@@ -329,7 +401,7 @@
       $(window).on("wheel", function (e) {
         if (mHtml.is(":animated")) return;
         if (e.originalEvent.deltaY > 0) {
-          if (page == 4) return;
+          if (page == 6) return;
           page++;
         } else if (e.originalEvent.deltaY < 0) {
           if (page == 1) return;
