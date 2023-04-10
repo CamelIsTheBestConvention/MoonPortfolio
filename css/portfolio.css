@@ -191,6 +191,7 @@ section {
   font-size: 0.8rem;
   opacity: 0;
   margin: 10px;
+  font-weight: 700;
 }
 
 .skill-wrapper:hover .overlay {
@@ -205,9 +206,11 @@ section {
 
 /* 프로젝트 */
 .project-wrapper {
-  border: 1px solid black;
+  margin: 0 auto;
+  box-shadow: 5px 5px 5px 4px #d9d9d9;
   border-radius: 10px;
-  width: 60rem;
+  width: 70rem;
+  background-color: ghostwhite;
 }
 
 .relative {
@@ -216,6 +219,80 @@ section {
 
 .absolute {
   position: absolute;
-  top: 10%;
-  left: 5%;
+  top: 5%;
+  left: 1%;
+}
+
+.project-name {
+  font-size: 2rem;
+  margin: 1rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.project-content-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project-img-wrapper {
+  width: 30%;
+}
+
+.project-img-wrapper img {
+  width: 80%;
+}
+
+.project-text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.project-text-title {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-text-skill {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.project-detail {
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 0.6rem;
+  background-color: black;
+  text-align: center;
+  line-height: 2.8rem;
+}
+
+.project-detail a {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: white;
+}
+
+/* 프로젝트 제작 */
+.project-made {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+}
+
+.project-made-title {
+  margin-right: 2rem;
+}
+
+.project-made-title p {
+  margin-bottom: 0.5rem;
+}
+
+.project-made-text {
+  font-weight: 500;
+}
+
+.project-made-text p {
+  margin-bottom: 0.5rem;
 }
