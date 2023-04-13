@@ -6,9 +6,34 @@
 
 header {
   background-color: black;
+  height: 4rem;
 }
 
 header a {
   text-decoration: none;
   color: white;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  margin-left: 2rem;
+}
+
+main {
+  width: 90%;
+  margin: 0 auto;
+  /* border: 1px solid black; */
+}
+
+.project-title {
+  display: flex;
+  border-bottom: 2px solid lightblue;
+  padding: 1.5rem 0;
+}
+
+.project-title img {
+  width: 3%;
+  margin-right: 1.5rem;
+}
+
+.project-title h1 {
+  line-height: 2.5rem;
 }
