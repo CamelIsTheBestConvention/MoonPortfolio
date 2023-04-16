@@ -17,7 +17,7 @@
 
 body {
   overflow-x: hidden;
-  font-family: "Sunflower", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -101,6 +101,44 @@ section {
   height: 30%;
 }
 
+/* 프로필 */
+.short-intro {
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin: 1rem 0;
+}
+
+.profile-box {
+  width: 100%;
+}
+
+.profile-box2 {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-img {
+  width: 20vw;
+  height: 50vh;
+  border-radius: 10px;
+}
+
+.profile-img img {
+  width: inherit;
+  height: inherit;
+  border-radius: 10px;
+}
+
+.profile-guide {
+  margin-left: 3%;
+}
+
+.profile-body {
+  font-size: 1.2rem;
+  display: flex;
+  text-align: left;
+}
+
 /* aboutME */
 .aboutMe {
   position: absolute;
@@ -126,9 +164,14 @@ section {
 
 /* 개발자가 되기위한 설명 */
 .forDev {
+  width: 30vw;
   text-align: left;
-  margin: 20px 0;
+  margin-top: 1rem;
   font-size: 1rem;
+}
+
+.forDev p {
+  margin-bottom: 1rem;
 }
 
 /* 기술파트 */
@@ -138,8 +181,7 @@ section {
 
 .skill-title {
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 1rem 0;
 }
 
 .skill-inner-box {
@@ -190,8 +232,12 @@ section {
 .skill-text {
   font-size: 0.8rem;
   opacity: 0;
-  margin: 10px;
+  margin: 0.5rem;
   font-weight: 700;
+}
+
+.skill-text p {
+  margin-bottom: 0.3rem;
 }
 
 .skill-wrapper:hover .overlay {
@@ -209,7 +255,7 @@ section {
   margin: 0 auto;
   box-shadow: 5px 5px 5px 4px #d9d9d9;
   border-radius: 10px;
-  width: 70rem;
+  width: 70vw;
   background-color: ghostwhite;
 }
 
@@ -265,7 +311,11 @@ section {
   border-radius: 0.6rem;
   background-color: black;
   text-align: center;
-  line-height: 2.8rem;
+  line-height: 2.5rem;
+}
+
+.project-detail:hover {
+  background-color: #222;
 }
 
 .project-detail a {

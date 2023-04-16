@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>빈자리 - BEANZARI</title>
     <link rel="stylesheet" href="css/detail.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header><a href="index.html">Home</a></header>
@@ -16,17 +22,20 @@
         <h1>빈자리 - BEANZARI</h1>
       </section>
       <!-- 프로젝트 소개 -->
-      <section>
+      <section class="project-content">
         <!-- 소개 -->
-        <section>
-          <article>💡 프로젝트 소개</article>
+        <section class="project-intro">
+          <h2>💡 프로젝트 소개</h2>
           <article>
-            여가생활의 자리예약을 하기 위한 모바일용 웹페이지입니다.
+            <p>
+              노래방이나 당구장 같은 여가생활에 자리대기를 걸어보면 어떨까 하여
+              만들어 본 모바일용 웹페이지입니다.
+            </p>
           </article>
         </section>
         <!-- 페이지 주요기능 -->
-        <section>
-          <article>페이지 주요 기능</article>
+        <section class="project-func">
+          <h3>페이지 주요 기능</h3>
           <ul>
             <li>회원가입, 로그인</li>
             <li>검색 기능(개발 중 입니다.)</li>
@@ -34,24 +43,66 @@
             <li>예약하기(개발 중 입니다.)</li>
             <li>예약 알람(개발 중 입니다.)</li>
           </ul>
+          <article>
+            <p>- JWT 토큰을 사용한 사용자 인증 - 회원가입, 로그인</p>
+            <p>- 페이지 이동을 위한 react-router-dom, navigate</p>
+            <p>- 요청, 응답을 위한 서버는 node로 구성</p>
+            <p>- 상태값은 useState로 각 컴포넌트에 적용</p>
+          </article>
         </section>
         <!-- 프로젝트에서 맡은 부분 -->
         <!-- <section></section> -->
         <!-- 맡은 부분 자세히 -->
         <!-- <section></section> -->
         <!-- 개발 비화 -->
-        <section>
-          <article>개발 과정</article>
+        <section class="project-flow">
+          <h3>개발 과정</h3>
           <article>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <p>
+              - 리액트를 공부하며 만들어본 페이지이며 Hook 사용과 Server의 요청,
+              응답에 대한 공부를 할 수 있었습니다.
+            </p>
+            <p>
+              - 처음에는 간단하게 화면을 구성해 백엔드와 데이터를 이동해보려
+              했었는데, 실력 미숙으로 이동이 잘 안되었습니다
+            </p>
+            <p>
+              - 그래서 프론트를 테스트할 수 있는 Server 파일을 만들어 응답,
+              요청하는 코드를 공부하였고 현재는 Server를 이용해 회원가입,
+              로그인을 세션에 담아 사용하고 있습니다.
+            </p>
+            <p>
+              - 크로스도메인 이슈(CORS)는 리액트 기본 포트를 작성하여
+              해결했습니다.
+            </p>
+            <p>
+              - 세션 토큰을 이용해 로그인 세션이 있을 시 로그인 아이콘을
+              마이페이지 아이콘으로 바꾸는 식으로 이용했습니다.
+            </p>
           </article>
         </section>
         <!-- 개선점 -->
-        <section></section>
+        <section class="project-refix">
+          <h3>개선점</h3>
+          <article>
+            <p>
+              - 컴포넌트를 나누는 방식이 뭔가 잘못된 것 같아 좀 더 많은
+              컴포넌트를 쪼개는 연습을 해야합니다.
+            </p>
+            <p>
+              - 따라서 props를 다루는 것도 내가 원하는 대로 값을 이동시키는
+              연습을 해야하고 구조 분해 할당에 익숙해져아합니다.
+            </p>
+            <p>
+              - 현재 부가적인 이벤트나 페이지 이동만 있고 정작 페이지의 메인
+              기능인 예약을 못했기 때문에 신속하게 작업이 필요합니다.
+            </p>
+            <p>
+              - 그 외의 기능은 백엔드에 연동되었을 때 자연스럽게 작동되게 데이터
+              요청을 작성해놔야합니다.
+            </p>
+          </article>
+        </section>
       </section>
     </main>
   </body>

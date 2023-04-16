@@ -4,17 +4,24 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: ghostwhite;
+}
+
 header {
   background-color: black;
-  height: 4rem;
+  opacity: 0.9;
+  height: 3.5rem;
 }
 
 header a {
   text-decoration: none;
   color: white;
   font-size: 2rem;
-  line-height: 3.5rem;
+  line-height: 3rem;
   margin-left: 2rem;
+  font-weight: 700;
 }
 
 main {
@@ -36,4 +43,79 @@ main {
 
 .project-title h1 {
   line-height: 2.5rem;
+  font-size: 1.9rem;
+}
+
+.project-content {
+  margin: 1rem;
+}
+
+/* 소개 */
+.project-intro {
+  margin-bottom: 2rem;
+}
+
+.project-intro h2 {
+  margin-bottom: 1rem;
+}
+
+.project-intro article p {
+  margin-left: 0.3rem;
+  font-size: 1.2rem;
+}
+/* 기능 */
+.project-func {
+  margin-bottom: 2rem;
+}
+
+.project-func h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-func ul {
+  margin-left: 2rem;
+  list-style-type: square;
+  margin-bottom: 1rem;
+}
+
+.project-func ul li {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.project-func article p {
+  margin-left: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+/* 과정 */
+.project-flow {
+  margin-bottom: 2rem;
+}
+
+.project-flow h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-flow article p {
+  margin-bottom: 0.3rem;
+  margin-left: 0.3rem;
+}
+
+/* 개선점 */
+.project-refix {
+  margin-bottom: 2rem;
+}
+
+.project-refix h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.project-refix article p {
+  margin-bottom: 2rem;
+  margin-bottom: 0.3rem;
+  margin-left: 0.3rem;
 }
