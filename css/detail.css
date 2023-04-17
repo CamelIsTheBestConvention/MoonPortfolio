@@ -89,6 +89,19 @@ main {
   margin-bottom: 0.3rem;
 }
 
+/* 맡은 부분 */
+.project-made {
+  margin-bottom: 2rem;
+}
+.project-made h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.project-made article p {
+  margin-bottom: 0.3rem;
+  margin-left: 0.3rem;
+}
+
 /* 과정 */
 .project-flow {
   margin-bottom: 2rem;
@@ -118,4 +131,8 @@ main {
   margin-bottom: 2rem;
   margin-bottom: 0.3rem;
   margin-left: 0.3rem;
+}
+
+.dummy {
+  height: 10rem;
 }

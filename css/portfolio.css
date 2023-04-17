@@ -94,11 +94,46 @@ section {
 }
 
 .contact {
-  height: 70%;
+  height: 25%;
 }
 
 .footer {
-  height: 30%;
+  height: 75%;
+  position: relative;
+}
+
+.contactMe {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+/* 깃 컨텍트 */
+.contact-git {
+  display: flex;
+}
+
+.contact-git img {
+  width: 20px;
+}
+
+.contact-git a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* 깃 티스토리 */
+.contact-tistory {
+  display: flex;
+}
+
+.contact-tistory img {
+  width: 20px;
+}
+
+.contact-tistory a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 /* 프로필 */

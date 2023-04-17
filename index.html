@@ -356,7 +356,7 @@
                   </div>
                   <!-- 자세히 보기 -->
                   <div class="project-detail">
-                    <a href="beanzari.html">자세히 보기</a>
+                    <a href="beanzari.html" target="_blank">자세히 보기</a>
                   </div>
                 </div>
                 <!-- 프로젝트 제작 -->
@@ -392,6 +392,7 @@
           </div>
         </div>
       </section>
+      <!-- 두 번째 프로젝트 -->
       <section class="flexCenter relative">
         <div class="pojectBox whiteBackground">
           <div class="skill-title">PROJECT 02</div>
@@ -401,25 +402,25 @@
             <!-- 이미지와 설명 -->
             <div class="project-content-wrapper">
               <div class="project-img-wrapper">
-                <img src="img/beanzari.png" />
+                <img src="img/springDreamLogin.png" />
               </div>
               <div>
                 <!-- 프로젝트 간단 설명 -->
                 <div class="project-text">
                   <!-- 주제 -->
                   <div class="project-text-title">
-                    React를 이용해 여가 생활에 자리예약을 할 수 있게 만든 모바일
-                    크기의 웹 페이지를 만들었습니다.
+                    Spring을 사용해 만든 학생들끼리의 문제 해결 커뮤니티
+                    팀프로젝트 입니다.
                   </div>
                   <!-- 기술 -->
                   <div class="project-text-skill">
-                    React의 useState, useEffect 등의 Hook을 이용하여 만들었고 각
-                    페이지별로 Routing을 걸어 <br />
-                    페이지 이동을 원활하게 하였습니다.
+                    인텔리제이를 사용해 만들었고, 데이터베이스는 ORACLE을
+                    사용하여<br />
+                    MVC2 패턴을 이용해 연동하였습니다.
                   </div>
                   <!-- 자세히 보기 -->
                   <div class="project-detail">
-                    <a href="beanzari.html">자세히 보기</a>
+                    <a href="springDream.html" target="_blank">자세히 보기</a>
                   </div>
                 </div>
                 <!-- 프로젝트 제작 -->
@@ -434,17 +435,15 @@
                     <p>GitHub</p>
                   </div>
                   <div class="project-made-text">
-                    <p>
-                      4명&#40;기획 - 1명, 프론트엔드 - 1명, 백엔드 - 2명&#41;
-                    </p>
-                    <p>HTML, Css, JavaScript, React</p>
-                    <p>Spring&#40;현재 연동을 못한 상태&#41;</p>
+                    <p>5명&#40;퍼블리싱 - 전부 참여, 백엔드 - 3명&#41;</p>
+                    <p>HTML, Css, Js, Jquery</p>
+                    <p>Spring</p>
                     <p>ORACLE</p>
-                    <p>로그인, 회원가입, 즐겨찾기, 알림</p>
+                    <p>로그인, 회원가입, 게시판, 포인트 충전, 검색</p>
                     <p>미정</p>
                     <p>
                       <a
-                        href="https://github.com/CamelIsTheBestConvention/BINZARI-React"
+                        href="https://github.com/CamelIsTheBestConvention/springdream"
                         >GitHub Repository</a
                       >
                     </p>
@@ -458,28 +457,45 @@
       <!-- contact me -->
       <section>
         <div class="whiteFont fontsize5rem bold subject contact">ContactMe</div>
-        <div class="footer whiteBackground"></div>
+        <div class="footer whiteBackground">
+          <div class="contactMe">
+            <p>☎ 010-2086-7368</p>
+            <p>✉ tjdwnsrhksdn@naver.com</p>
+            <p class="contact-git">
+              <img
+                src="img/githubIcon.png"
+                alt="깃허브아이콘"
+              />&nbsp;CamelIsTheBestConvention&nbsp;
+              <a href="https://github.com/CamelIsTheBestConvention">GitHub</a>
+            </p>
+            <p class="contact-tistory">
+              <img src="img/tistoryIcon.png" />&nbsp;미새의 코딩공부&nbsp;
+              <a href="https://github.com/CamelIsTheBestConvention">Tistory</a>
+            </p>
+            <p></p>
+          </div>
+        </div>
       </section>
     </div>
     <script src="portfolio.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-      var mHtml = $("html");
-      var page = 1;
+      // var mHtml = $("html");
+      // var page = 1;
 
-      mHtml.animate({ scrollTop: 0 }, 10);
-      $(window).on("wheel", function (e) {
-        if (mHtml.is(":animated")) return;
-        if (e.originalEvent.deltaY > 0) {
-          if (page == 6) return;
-          page++;
-        } else if (e.originalEvent.deltaY < 0) {
-          if (page == 1) return;
-          page--;
-        }
-        var posTop = (page - 1) * $(window).height();
-        mHtml.animate({ scrollTop: posTop });
-      });
+      // mHtml.animate({ scrollTop: 0 }, 10);
+      // $(window).on("wheel", function (e) {
+      //   if (mHtml.is(":animated")) return;
+      //   if (e.originalEvent.deltaY > 0) {
+      //     if (page == 6) return;
+      //     page++;
+      //   } else if (e.originalEvent.deltaY < 0) {
+      //     if (page == 1) return;
+      //     page--;
+      //   }
+      //   var posTop = (page - 1) * $(window).height();
+      //   mHtml.animate({ scrollTop: posTop });
+      // });
     </script>
   </body>
 </html>
