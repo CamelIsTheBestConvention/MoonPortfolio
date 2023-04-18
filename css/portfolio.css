@@ -98,14 +98,19 @@ section {
 }
 
 .footer {
-  height: 75%;
+  height: 60%;
   position: relative;
 }
-
+/* 컨텍 */
 .contactMe {
   position: absolute;
-  top: 10%;
+  top: 15%;
   left: 10%;
+}
+
+.contactMe p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 /* 깃 컨텍트 */
@@ -114,26 +119,48 @@ section {
 }
 
 .contact-git img {
-  width: 20px;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .contact-git a {
   text-decoration: none;
   font-weight: bold;
+  color: gray;
 }
 
-/* 깃 티스토리 */
+/* 티스토리 컨텍트 */
 .contact-tistory {
   display: flex;
+  margin-left: -0.3rem;
 }
 
 .contact-tistory img {
-  width: 20px;
+  width: 2rem;
+  height: 2rem;
 }
 
 .contact-tistory a {
   text-decoration: none;
   font-weight: bold;
+  color: orangered;
+}
+
+/* 노션 컨텍트*/
+.contact-notion {
+  display: flex;
+  margin-left: -0.1rem;
+}
+
+.contact-notion img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.contact-notion a {
+  text-decoration: none;
+  font-weight: bold;
+  color: darkblue;
 }
 
 /* 프로필 */
@@ -364,6 +391,7 @@ section {
   display: flex;
   justify-content: flex-start;
   font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .project-made-title {

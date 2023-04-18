@@ -402,7 +402,7 @@
             <!-- 이미지와 설명 -->
             <div class="project-content-wrapper">
               <div class="project-img-wrapper">
-                <img src="img/springDreamLogin.png" />
+                <img src="img/springDream.png" />
               </div>
               <div>
                 <!-- 프로젝트 간단 설명 -->
@@ -459,20 +459,33 @@
         <div class="whiteFont fontsize5rem bold subject contact">ContactMe</div>
         <div class="footer whiteBackground">
           <div class="contactMe">
-            <p>☎ 010-2086-7368</p>
-            <p>✉ tjdwnsrhksdn@naver.com</p>
+            <p>☎&nbsp;&nbsp;010-2086-7368</p>
+            <p>✉&nbsp;&nbsp;tjdwnsrhksdn@naver.com</p>
             <p class="contact-git">
               <img
                 src="img/githubIcon.png"
                 alt="깃허브아이콘"
               />&nbsp;CamelIsTheBestConvention&nbsp;
-              <a href="https://github.com/CamelIsTheBestConvention">GitHub</a>
+              <a
+                href="https://github.com/CamelIsTheBestConvention"
+                target="_blank"
+                >GitHub</a
+              >
             </p>
             <p class="contact-tistory">
               <img src="img/tistoryIcon.png" />&nbsp;미새의 코딩공부&nbsp;
-              <a href="https://github.com/CamelIsTheBestConvention">Tistory</a>
+              <a href="https://moonmisae-cdpt.tistory.com" target="_blank"
+                >Tistory</a
+              >
             </p>
-            <p></p>
+            <p class="contact-notion">
+              <img src="img/notionIcon.png" />&nbsp;노션&nbsp;
+              <a
+                href="https://moonmisae.notion.site/SungJun-Moon-27643c21187849469be3eebe86592f4d"
+                target="_blank"
+                >Notion</a
+              >
+            </p>
           </div>
         </div>
       </section>
@@ -480,22 +493,22 @@
     <script src="portfolio.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
-      // var mHtml = $("html");
-      // var page = 1;
+      var mHtml = $("html");
+      var page = 1;
 
-      // mHtml.animate({ scrollTop: 0 }, 10);
-      // $(window).on("wheel", function (e) {
-      //   if (mHtml.is(":animated")) return;
-      //   if (e.originalEvent.deltaY > 0) {
-      //     if (page == 6) return;
-      //     page++;
-      //   } else if (e.originalEvent.deltaY < 0) {
-      //     if (page == 1) return;
-      //     page--;
-      //   }
-      //   var posTop = (page - 1) * $(window).height();
-      //   mHtml.animate({ scrollTop: posTop });
-      // });
+      mHtml.animate({ scrollTop: 0 }, 10);
+      $(window).on("wheel", function (e) {
+        if (mHtml.is(":animated")) return;
+        if (e.originalEvent.deltaY > 0) {
+          if (page == 6) return;
+          page++;
+        } else if (e.originalEvent.deltaY < 0) {
+          if (page == 1) return;
+          page--;
+        }
+        var posTop = (page - 1) * $(window).height();
+        mHtml.animate({ scrollTop: posTop });
+      });
     </script>
   </body>
 </html>
