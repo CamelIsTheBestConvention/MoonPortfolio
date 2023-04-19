@@ -268,8 +268,6 @@ section {
 .skill-img:hover {
   width: 17rem;
   transition: 0.5s;
-  /* margin-left: 10px; */
-  /* cursor: pointer; */
 }
 
 .skill-wrapper {

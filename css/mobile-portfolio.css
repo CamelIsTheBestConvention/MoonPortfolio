@@ -1,0 +1,169 @@
+@media (max-width: 420px) {
+  /* 1페이지 */
+  header {
+    width: 100%;
+    height: 3rem;
+    text-align: right;
+    padding-top: 1rem;
+    padding-right: 7rem;
+  }
+
+  #smallCircle {
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    top: -5rem;
+    left: -5rem;
+  }
+
+  #bigCircle {
+    width: 23rem;
+    height: 23rem;
+    bottom: 5rem;
+    right: -5rem;
+  }
+
+  .fontsize15rem {
+    font-size: 6rem;
+  }
+
+  .fontsize10rem {
+    font-size: 4rem;
+  }
+
+  .subject {
+    padding-top: 3rem;
+    padding-left: 0.5rem;
+  }
+
+  .aboutMe {
+    bottom: 26%;
+    left: 27%;
+  }
+
+  .fontsize1rem {
+    font-size: 0.8rem;
+  }
+
+  .downArrow {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* 2페이지 */
+  .centerportfolio {
+    width: 75%;
+    padding-top: 0.5rem;
+    height: 7rem;
+    text-align: center;
+  }
+
+  .fontsize5rem {
+    font-size: 2rem;
+  }
+
+  .fontsize3rem {
+    font-size: 1.3rem;
+    margin-right: 6rem;
+  }
+
+  .short-intro {
+    width: 55%;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 1rem 0 1rem 2.3rem;
+  }
+
+  .profile-box {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .profile-img {
+    width: 23vw;
+    height: 20vh;
+    border-radius: 5px;
+    margin-left: -6rem;
+  }
+
+  .profile-body {
+    font-size: 0.72rem;
+    display: flex;
+    text-align: left;
+  }
+
+  .forDev {
+    width: 50vw;
+    text-align: left;
+    font-size: 0.6rem;
+  }
+
+  /* 3페이지 */
+  .whiteboxWidth {
+    width: 5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 0 auto;
+  }
+
+  .flexAlignStart {
+    position: relative;
+  }
+  .flexAlignStart > div {
+    margin-left: 0.5rem;
+  }
+
+  .skill-inner-box {
+    padding: 0.5rem;
+  }
+
+  .skill-list {
+    font-size: 0.8rem;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #d9d9d9;
+  }
+
+  .skill-img {
+    width: 4rem;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+
+  .skill-img:hover {
+    width: 4.2rem;
+    transition: 0.5s;
+  }
+
+  .overlay {
+    width: 1rem;
+    height: 3rem;
+  }
+
+  .skill-text {
+    font-size: 0.4rem;
+  }
+
+  .skill-text p {
+    margin-bottom: 0.1rem;
+  }
+
+  /* 기술 위치 */
+  .skill-front {
+    width: 100px;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    background-color: #fff;
+    border-radius: 0.5rem;
+  }
+
+  .skill-data {
+    width: 100px;
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    background-color: #fff;
+    border-radius: 0.5rem;
+  }
+}
