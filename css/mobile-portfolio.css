@@ -5,7 +5,7 @@
     height: 3rem;
     text-align: right;
     padding-top: 1rem;
-    padding-right: 7rem;
+    padding-right: 3rem;
   }
 
   #smallCircle {
@@ -19,16 +19,16 @@
   #bigCircle {
     width: 23rem;
     height: 23rem;
-    bottom: 5rem;
+    bottom: -5rem;
     right: -5rem;
   }
 
   .fontsize15rem {
-    font-size: 6rem;
+    font-size: 8rem;
   }
 
   .fontsize10rem {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   .subject {
@@ -37,8 +37,9 @@
   }
 
   .aboutMe {
-    bottom: 26%;
-    left: 27%;
+    /* bottom: 9%;
+    left: 38%; */
+    display: none;
   }
 
   .fontsize1rem {
@@ -52,26 +53,29 @@
 
   /* 2페이지 */
   .centerportfolio {
-    width: 75%;
     padding-top: 0.5rem;
-    height: 7rem;
+    padding-right: 2rem;
+    height: 8.4rem;
     text-align: center;
   }
 
   .fontsize5rem {
-    font-size: 2rem;
+    font-size: 2.3rem;
   }
 
   .fontsize3rem {
-    font-size: 1.3rem;
-    margin-right: 6rem;
+    font-size: 2.2rem;
+  }
+
+  .profile-title {
+    margin-right: 2rem;
   }
 
   .short-intro {
     width: 55%;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 100;
-    margin: 1rem 0 1rem 2.3rem;
+    margin: 1rem 5rem 1rem 5rem;
   }
 
   .profile-box {
@@ -79,26 +83,51 @@
     margin: 0 auto;
   }
 
+  .profile-box2 {
+    display: block;
+    justify-content: center;
+  }
+
   .profile-img {
-    width: 23vw;
-    height: 20vh;
+    width: 90%;
+    height: 90%;
     border-radius: 5px;
-    margin-left: -6rem;
   }
 
   .profile-body {
-    font-size: 0.72rem;
+    font-size: 0.8rem;
     display: flex;
     text-align: left;
   }
 
   .forDev {
-    width: 50vw;
+    width: 70vw;
     text-align: left;
-    font-size: 0.6rem;
+    font-size: 0.75rem;
+    margin-left: -3rem;
+  }
+
+  .forDev p {
+    margin-bottom: 0.6rem;
+  }
+
+  .profile-guide {
+    margin-left: 0;
   }
 
   /* 3페이지 */
+  .flexAlignStart {
+    display: block;
+  }
+
+  .skill-part {
+    position: relative;
+  }
+
+  .flexAlignStart > div {
+    margin-left: 0.5rem;
+  }
+
   .whiteboxWidth {
     width: 5rem;
     background-color: #fff;
@@ -106,15 +135,12 @@
     margin: 0 auto;
   }
 
-  .flexAlignStart {
-    position: relative;
-  }
-  .flexAlignStart > div {
-    margin-left: 0.5rem;
-  }
-
   .skill-inner-box {
     padding: 0.5rem;
+  }
+
+  .skill-title {
+    margin-right: 1rem;
   }
 
   .skill-list {
@@ -125,45 +151,201 @@
   }
 
   .skill-img {
-    width: 4rem;
-    margin-left: 10px;
-    cursor: pointer;
+    width: 80px;
+    height: 44px;
+    margin: 0 auto;
+  }
+
+  .git-img {
+    margin-top: 0.5rem;
   }
 
   .skill-img:hover {
-    width: 4.2rem;
+    width: 6rem;
     transition: 0.5s;
   }
 
   .overlay {
     width: 1rem;
-    height: 3rem;
+    height: 5rem;
+    left: 100%;
+    margin-top: -0.45rem;
+  }
+
+  .skill-wrapper:hover .overlay {
+    opacity: 1;
+    width: 12rem;
+    height: 9.2rem;
+  }
+
+  .skill-wrapper:hover .overlay-data {
+    opacity: 1;
+    width: 12rem;
+    height: 6.5rem;
+  }
+
+  .skill-wrapper:hover .overlay-data-two {
+    opacity: 1;
+    width: 12rem;
+    height: 6.5rem;
+  }
+
+  .skill-wrapper:hover .overlay-git {
+    opacity: 1;
+    width: 12rem;
+    height: 4.8rem;
+  }
+
+  .overlay-two {
+    position: absolute;
+    top: -100%;
+  }
+
+  .overlay-data-two {
+    position: absolute;
+    top: -100%;
+  }
+
+  .overlay-three {
+    position: absolute;
+    top: -200%;
+  }
+
+  .overlay-sql {
+    position: absolute;
+    top: -100%;
   }
 
   .skill-text {
-    font-size: 0.4rem;
+    font-size: 0.7rem;
+    zoom: 0.9;
   }
 
   .skill-text p {
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.3rem;
   }
 
   /* 기술 위치 */
   .skill-front {
-    width: 100px;
+    width: 40%;
     position: absolute;
-    top: 0%;
+    top: 13%;
     left: 5%;
     background-color: #fff;
     border-radius: 0.5rem;
   }
 
   .skill-data {
-    width: 100px;
+    width: 40%;
     position: absolute;
-    top: 0%;
-    left: 40%;
+    top: 57%;
+    left: 7%;
     background-color: #fff;
     border-radius: 0.5rem;
+  }
+
+  .skill-version {
+    width: 40%;
+    height: 12%;
+    position: absolute;
+    top: 74%;
+    left: 7%;
+    background-color: #fff;
+    border-radius: 0.5rem;
+  }
+
+  .skill-back {
+    width: 40%;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    background-color: #fff;
+    border-radius: 0.5rem;
+  }
+
+  .skill-program {
+    width: 40%;
+    position: absolute;
+    top: 35%;
+    left: 49%;
+    background-color: #fff;
+    border-radius: 0.5rem;
+  }
+
+  /* 4페이지 */
+  .project-title {
+    font-size: 2rem;
+  }
+
+  .project-wrapper {
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .project-name {
+    text-align: center;
+    margin-left: -1rem;
+    font-size: 1.5rem;
+  }
+
+  .project-content-wrapper {
+    display: block;
+  }
+
+  .project-img-wrapper {
+    margin: 0 8rem;
+  }
+
+  .project-img-wrapper img {
+    width: 100%;
+  }
+
+  .project-text {
+    width: 62%;
+    margin: 0 4.4rem 1rem 4.4rem;
+  }
+
+  .project-text-title {
+    font-size: 0.9rem;
+  }
+
+  .project-text-skill {
+    font-size: 0.8rem;
+  }
+
+  .project-detail {
+    position: absolute;
+    top: 8%;
+    right: 8%;
+    width: 4.2rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    line-height: 1.8rem;
+  }
+
+  .project-detail a {
+    font-size: 0.8rem;
+  }
+
+  .project-made {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    justify-content: center;
+  }
+
+  .project-made-title {
+    margin-right: 0.5rem;
+  }
+  /* 컨텍트 */
+  .mobile-contact {
+    height: 15%;
+    text-align: center;
+    margin-right: 2.5rem;
+    line-height: 0;
+  }
+
+  .contactMe {
+    left: 5%;
   }
 }

@@ -41,7 +41,7 @@
           class="fontsize2rem bold centerTextBox10 whiteBackground"
         >
           <div class="profileContent">
-            <p class="fontsize3rem">📃 Profile</p>
+            <p class="fontsize3rem profile-title">📃 Profile</p>
             <p class="short-intro">
               저는 <span style="font-weight: bold">프론트엔드 개발자</span>가
               되기 위해 공부중입니다.
@@ -105,8 +105,8 @@
           <p class="skill-title fontsize3rem whiteFont bold">⚙ SKILLS</p>
           <div class="flexAlignStart">
             <!-- 프론트엔드 -->
-            <div class="whiteboxWidth">
-              <div class="skill-inner-box skill-front">
+            <div class="whiteboxWidth skill-front">
+              <div class="skill-inner-box">
                 <div class="skill-list">FrontEnd</div>
                 <!-- 이미지 -->
                 <div>
@@ -143,7 +143,7 @@
                       src="img/react.png"
                       alt="react"
                     />
-                    <div class="overlay">
+                    <div class="overlay overlay-two">
                       <div class="skill-text">
                         <p>
                           - JSX 방식으로 컴포넌트를 파트에 맞게 적절히 나눌 수
@@ -163,7 +163,7 @@
                   <!-- 제이쿼리 -->
                   <div class="skill-wrapper">
                     <img class="skill-img" src="img/jquery.png" alt="jquery" />
-                    <div class="overlay">
+                    <div class="overlay overlay-three">
                       <div class="skill-text">
                         <p>
                           - 클릭이벤트, 마우스 오버 등의 Js의 이벤트 핸들링을
@@ -181,8 +181,8 @@
             </div>
             <!-- 데이터베이스 기술 깃허브  -->
             <div>
-              <div class="whiteboxWidth" style="margin-bottom: 10px">
-                <div class="skill-inner-box skill-data">
+              <div class="whiteboxWidth skill-data" style="margin-bottom: 10px">
+                <div class="skill-inner-box">
                   <div class="skill-list">DataBase</div>
                   <!-- 이미지 -->
                   <div>
@@ -193,7 +193,7 @@
                         src="img/oracle.png"
                         alt="oracle"
                       />
-                      <div class="overlay">
+                      <div class="overlay overlay-data">
                         <div class="skill-text">
                           <p>- SQL문으로 DDL과 DML을 사용할 수 있습니다.</p>
                           <p>
@@ -206,7 +206,7 @@
                     <!-- mysql -->
                     <div class="skill-wrapper">
                       <img class="skill-img" src="img/mysql.png" alt="mysql" />
-                      <div class="overlay">
+                      <div class="overlay overlay-data-two">
                         <div class="skill-text">
                           <p>- SQL문으로 DDL과 DML을 사용할 수 있습니다.</p>
                           <p>
@@ -219,7 +219,7 @@
                   </div>
                 </div>
               </div>
-              <div class="whiteboxWidth">
+              <div class="whiteboxWidth skill-version">
                 <div class="skill-inner-box">
                   <div class="skill-list">Version Control</div>
                   <!-- 이미지 -->
@@ -227,11 +227,11 @@
                     <!-- 깃허브 -->
                     <div class="skill-wrapper">
                       <img
-                        class="skill-img"
+                        class="skill-img git-img"
                         src="img/github.jpg"
                         alt="github"
                       />
-                      <div class="overlay">
+                      <div class="overlay overlay-git">
                         <div class="skill-text">
                           <p>
                             - Git Bash를 사용하여 깃허브에 업로드할 수 있습니다.
@@ -248,7 +248,7 @@
               </div>
             </div>
             <!-- 백엔드 기술 -->
-            <div class="whiteboxWidth">
+            <div class="whiteboxWidth skill-back">
               <div class="skill-inner-box">
                 <div class="skill-list">BackEnd</div>
                 <!-- 이미지 -->
@@ -274,7 +274,7 @@
                   <!-- jsp -->
                   <div class="skill-wrapper">
                     <img class="skill-img" src="img/jsp.jpg" alt="jsp" />
-                    <div class="overlay">
+                    <div class="overlay overlay-two">
                       <div class="skill-text">
                         <p>
                           - MVC 1 패턴을 이용하여 JSP 팀프로젝트를 한 적이
@@ -290,7 +290,7 @@
                   <!-- spring -->
                   <div class="skill-wrapper">
                     <img class="skill-img" src="img/spring.png" alt="spring" />
-                    <div class="overlay">
+                    <div class="overlay overlay-three">
                       <div class="skill-text">
                         <p>
                           - MVC 2 패턴을 이용하여 Spring 팀프로젝트를 한 적이
@@ -310,19 +310,35 @@
                 </div>
               </div>
             </div>
-            <div class="whiteboxWidth">
+            <div class="whiteboxWidth skill-program">
               <div class="skill-inner-box">
                 <div class="skill-list">Use Program</div>
                 <!-- 이미지 -->
                 <div>
-                  <img class="skill-img" src="img/eclipse.png" alt="eclipse" />
-                  <img class="skill-img" src="img/vscode.png" alt="vscode" />
-                  <img class="skill-img" src="img/dbeaver.png" alt="dbeaver" />
-                  <img
-                    class="skill-img"
-                    src="img/intellij.png"
-                    alt="intellij"
-                  />
+                  <div class="skill-wrapper">
+                    <img
+                      class="skill-img"
+                      src="img/eclipse.png"
+                      alt="eclipse"
+                    />
+                  </div>
+                  <div class="skill-wrapper">
+                    <img class="skill-img" src="img/vscode.png" alt="vscode" />
+                  </div>
+                  <div class="skill-wrapper">
+                    <img
+                      class="skill-img"
+                      src="img/dbeaver.png"
+                      alt="dbeaver"
+                    />
+                  </div>
+                  <div class="skill-wrapper">
+                    <img
+                      class="skill-img"
+                      src="img/intellij.png"
+                      alt="intellij"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -332,7 +348,7 @@
       <!-- 첫 번째 프로젝트 -->
       <section class="flexCenter relative">
         <div class="pojectBox whiteBackground">
-          <div class="skill-title">PROJECT 01</div>
+          <div class="skill-title project-title">PROJECT 01</div>
           <div class="project-wrapper">
             <!-- 프로젝트 이름 -->
             <div class="project-name">빈자리 - BEANZARI</div>
@@ -396,7 +412,7 @@
       <!-- 두 번째 프로젝트 -->
       <section class="flexCenter relative">
         <div class="pojectBox whiteBackground">
-          <div class="skill-title">PROJECT 02</div>
+          <div class="skill-title project-title">PROJECT 02</div>
           <div class="project-wrapper">
             <!-- 프로젝트 이름 -->
             <div class="project-name">스프링드림 - SpringDream</div>
@@ -441,7 +457,7 @@
                     <p>Spring</p>
                     <p>ORACLE</p>
                     <p>로그인, 회원가입, 게시판, 포인트 충전, 검색</p>
-                    <p>미정</p>
+                    <p>제작 중</p>
                     <p>
                       <a
                         href="https://github.com/CamelIsTheBestConvention/springdream"
@@ -457,7 +473,9 @@
       </section>
       <!-- contact me -->
       <section>
-        <div class="whiteFont fontsize5rem bold subject contact">ContactMe</div>
+        <div class="whiteFont fontsize5rem bold subject contact mobile-contact">
+          ContactMe
+        </div>
         <div class="footer whiteBackground">
           <div class="contactMe">
             <p>☎&nbsp;&nbsp;010-2086-7368</p>
@@ -482,7 +500,7 @@
             <p class="contact-notion">
               <img src="img/notionIcon.png" />&nbsp;노션&nbsp;
               <a
-                href="https://moonmisae.notion.site/SungJun-Moon-27643c21187849469be3eebe86592f4d"
+                href="https://moonmisae.notion.site/8687cfc8be4b40f5b203c54506a8f960"
                 target="_blank"
                 >Notion</a
               >
