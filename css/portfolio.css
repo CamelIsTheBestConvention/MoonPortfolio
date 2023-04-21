@@ -83,6 +83,7 @@ section {
 .pojectBox {
   width: 100%;
   height: 90vh;
+  min-height: 800px;
   font-size: 3rem;
   font-weight: bold;
   color: var(--fontColor);
@@ -381,6 +382,10 @@ section {
   font-size: 1.4rem;
   text-decoration: none;
   color: white;
+}
+
+.bogi {
+  display: none;
 }
 
 /* 프로젝트 제작 */

@@ -1,7 +1,7 @@
 @media (max-width: 420px) {
   /* 1페이지 */
   section {
-    min-height: 900px;
+    min-height: 800px;
   }
 
   header {
@@ -286,6 +286,26 @@
   /* 4페이지 */
   .project-title {
     font-size: 2rem;
+    position: relative;
+  }
+
+  .bogi {
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: 2%;
+    width: 4.5rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    line-height: 1rem;
+    background-color: black;
+    text-align: center;
+  }
+
+  .bogi a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: white;
   }
 
   .project-wrapper {
@@ -332,6 +352,7 @@
     height: 2rem;
     border-radius: 0.4rem;
     line-height: 1.7rem;
+    display: none;
   }
 
   .project-detail a {
