@@ -204,7 +204,11 @@
   .skill-wrapper:hover .overlay-git {
     opacity: 1;
     width: 12rem;
-    height: 4.8rem;
+    height: 4.3rem;
+  }
+
+  .skill-wrapper:hover .git-text > p {
+    margin-bottom: 0;
   }
 
   .overlay-two {
